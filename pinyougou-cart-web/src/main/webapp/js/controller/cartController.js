@@ -12,6 +12,7 @@ var app = new Vue({
         totalNum: 0,
         ids: [],
         searchEntity: {}
+
     },
     methods: {
         //方法 就是当页面加载的时候调用 发送请求获取购物车列表数据  赋值给变量  页面绑定变量 循环遍历
@@ -69,7 +70,7 @@ var app = new Vue({
         },
         //点击的时候调用 影响变量的值 选中地址
         selectAddress:function (address) {
-                this.address=address;
+            this.address=address;
         },
         isSelected:function (address) {
             if(this.address==address){
@@ -100,10 +101,22 @@ var app = new Vue({
                     }
                 }
             )
-        }
-
-
+        },
+        //将购物车中的物品移到我的关注（收藏）
+        addCollect:function(itemId){
+            axios.get('/cart/addCollect.shtml', {
+                params: {
+                    //参数名：参数值
+                    itemId: itemId,
+                }
+            }).then(
+                function(response){
+                    alert(response.data.message);
+                }
+            )
+        },
     },
+
     created: function () {
         this.findCartList();
 
