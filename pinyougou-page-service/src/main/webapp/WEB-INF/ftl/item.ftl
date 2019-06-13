@@ -33,7 +33,8 @@
 <!-- 头部栏位 -->
 <!--页面顶部-->
 <#include "head.ftl">
-
+<#assign text="{'bank':'工商银行','account':'10101920201920212'}" />
+<#assign data=text?eval />
 <#assign imageList=tbGoodsDesc.itemImages?eval />
 
 <#assign customAttributeList=tbGoodsDesc.customAttributeItems?eval />

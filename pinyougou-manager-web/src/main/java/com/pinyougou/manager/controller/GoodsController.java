@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageInfo;
 import com.pinyougou.common.pojo.MessageInfo;
+import com.pinyougou.mapper.TbItemMapper;
 import com.pinyougou.page.service.ItemPageService;
 import com.pinyougou.pojo.TbGoods;
 import com.pinyougou.pojo.TbItem;
@@ -155,9 +156,10 @@ public class GoodsController {
 	public Result updateStatus(@RequestBody Long[] ids,String status){
 		try {
 			goodsService.updateStatus(ids,status);
-			if("1".equals(status)){
+            if("1".equals(status)){
 
-			/*	//1. 获取被审核的先通过SPU 获取到SKU的商品的数据
+			/*
+			//1. 获取被审核的先通过SPU 获取到SKU的商品的数据
 				//List<TbItem> itemList = goodsService.findTbItemListByIds(ids);
 					//2. 将被省的SKU的商品商品的数据  更新到 ES中。
 					//2.1 引入search的服务
@@ -168,22 +170,41 @@ public class GoodsController {
 				for (Long id : ids) {
 					//根据SPU的id 查询数据库中的额数据  生成静态页面
 					itemPageService.genItemHtml(id);
-				}*/
-				//发送消息
+				}
+			*/
+				//1.发送消息,生成商品详细页
 				List<TbItem> itemList = goodsService.findTbItemListByIds(ids);
-
 				MessageInfo info = new MessageInfo("Goods_Topic","goods_update_tag","updateStatus",itemList,MessageInfo.METHOD_UPDATE);
-
-
 				String s = JSON.toJSONString(info);
 				Message message = new Message(info.getTopic(),info.getTags(),info.getKeys(),s.getBytes());
-
 				SendResult send = producer.send(message);
-				System.out.println(send);
+				System.out.println("发送消息:>>>>>"+send);
 
+				//2.发送消息,更新es
+				MessageInfo messageInfo = new MessageInfo("Goods_Es_Topic", "goods_update_tag", "updateStatus", ids, MessageInfo.METHOD_UPDATE);
+				String str = JSON.toJSONString(messageInfo);
+				Message messageToEs = new Message(messageInfo.getTopic(), messageInfo.getTags(), messageInfo.getKeys(), str.getBytes());
+				SendResult sendToEs = producer.send(messageToEs);
+				System.out.println("发送消息:>>>>"+sendToEs);
+
+
+			}else if("2".equals(status)){
+				//审核被驳回就发送消息,删除详情页
+				MessageInfo info = new MessageInfo("Goods_Topic","goods_update_tag","updateStatus",ids,MessageInfo.METHOD_DELETE);
+				String body = JSON.toJSONString(info);
+				Message message = new Message(info.getTopic(), info.getTags(), info.getKeys(), body.getBytes());
+				SendResult send = producer.send(message);
+				System.out.println("发送消息:>>>>>"+send);
+
+				//审核被驳回就发送消息,删除es中的商品信息
+				MessageInfo messageInfo = new MessageInfo("Goods_Es_Topic","goods_update_tag","updateStatus",ids,MessageInfo.METHOD_DELETE);
+				String str = JSON.toJSONString(messageInfo);
+				Message messageToEs = new Message(messageInfo.getTopic(), messageInfo.getTags(), messageInfo.getKeys(), str.getBytes());
+				SendResult sendToEs = producer.send(messageToEs);
+				System.out.println("发送消息:>>>>>"+sendToEs);
 			}
 
-			return new Result(true,"更新成");
+			return new Result(true,"更新成功");
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Result(false,"更新失败");

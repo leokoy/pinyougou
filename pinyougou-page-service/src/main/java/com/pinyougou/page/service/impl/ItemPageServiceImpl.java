@@ -39,8 +39,8 @@ public class ItemPageServiceImpl implements ItemPageService {
     @Autowired
     private TbGoodsDescMapper goodsDescMapper;
 
-    @Autowired
-    private FreeMarkerConfigurer configurer;
+    /*@Autowired
+    private FreeMarkerConfigurer configurer;*/
 
     @Autowired
     private TbItemMapper itemMapper;
@@ -60,23 +60,24 @@ public class ItemPageServiceImpl implements ItemPageService {
     public void deleteByIds(Long[] longs) {
         for (Long aLong : longs) {
             try {
-                FileUtils.forceDelete(new File("F:\\freemarker\\"+aLong+".html"));
+                FileUtils.forceDelete(new File("E:\\createHTML\\"+aLong+".html"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    private void genHTML(String templateName,TbGoods tbGoods, TbGoodsDesc tbGoodsDesc) {
+    private void genHTML(String templateName, TbGoods tbGoods, TbGoodsDesc tbGoodsDesc) {
         FileWriter writer=null;
         try {
-            //1.创建模板文件
-            //2.创建configuration对象
-            //4.构建文件所在的目录以及字符编码
-
-            Configuration configuration = configurer.getConfiguration();
-            //5.加载模板文件获取到模板对象，准备数据集
-            Template template = configuration.getTemplate(templateName);
+            //1.创建配置类
+            Configuration configuration = new Configuration(Configuration.getVersion());
+            //2.设置模板所在的目录
+            configuration.setDirectoryForTemplateLoading(new File("F:\\new2\\pinyougou\\pinyougou-page-service\\src\\main\\webapp\\WEB-INF\\ftl"));
+            //3.设置字符集
+            configuration.setDefaultEncoding("utf-8");
+            //4.加载模板
+            Template template = configuration.getTemplate("item.ftl");
 
             Map map = new HashMap<>();
             map.put("tbGoods",tbGoods);
@@ -96,7 +97,7 @@ public class ItemPageServiceImpl implements ItemPageService {
 
 
             //6.创建(写)文件流  输出
-           writer = new FileWriter(new File("F:\\freemarker\\"+tbGoods.getId()+".html"));
+           writer = new FileWriter(new File("E:\\createHTML\\"+tbGoods.getId()+".html"));
             template.process(map,writer);
             //7.关闭流
         } catch (Exception e) {
