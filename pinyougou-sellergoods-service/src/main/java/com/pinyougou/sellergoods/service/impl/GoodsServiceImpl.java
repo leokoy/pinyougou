@@ -35,7 +35,8 @@ public class GoodsServiceImpl extends CoreServiceImpl<TbGoods>  implements Goods
 
 	@Autowired
 	private TbGoodsDescMapper goodsDescMapper;
-
+	@Autowired
+	private TbItemMapper itemMapper;
 
 
 
@@ -114,10 +115,6 @@ public class GoodsServiceImpl extends CoreServiceImpl<TbGoods>  implements Goods
 
         return pageInfo;
     }
-
-
-    @Autowired
-	private TbItemMapper itemMapper;
 
 	@Autowired
 	private TbItemCatMapper itemCatMapper;
@@ -300,6 +297,13 @@ public class GoodsServiceImpl extends CoreServiceImpl<TbGoods>  implements Goods
 		//要更新后的值
 		TbGoods tbGoods = new TbGoods();
 		tbGoods.setAuditStatus(status);
+
+		if("1".equals(status)){
+			tbGoods.setIsMarketable("1");
+		}else{
+			tbGoods.setIsMarketable("0");
+		}
+
 		goodsMapper.updateByExampleSelective(tbGoods,exmaple);
 	}
 
@@ -314,7 +318,9 @@ public class GoodsServiceImpl extends CoreServiceImpl<TbGoods>  implements Goods
 		return itemMapper.selectByExample(example);
     }
 
-    @Override
+
+
+	@Override
 		//逻辑删除  update tb-goods set is_delete=1 where id in (1,2,3)
 	public void delete(Object[] ids) {
 		Example exmaple = new Example(TbGoods.class);

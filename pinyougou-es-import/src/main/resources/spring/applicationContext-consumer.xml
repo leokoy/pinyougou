@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.pinyougou.page.listener.GoodsPageGenHtmlMessageListener" id="messageListener"></bean>
+    <bean class="com.pinyougou.es.listener.UpdateEsGoodsListener" id="messageListener"></bean>
 
     <!--配置消费者-->
     <bean class="org.apache.rocketmq.client.consumer.DefaultMQPushConsumer" id="consumer" init-method="start" destroy-method="shutdown">
@@ -16,7 +16,7 @@
         <!--设置主题-->
         <property name="subscription">
             <map>
-                <entry key="Goods_Topic" value="*"></entry>
+                <entry key="Goods_Es_Topic" value="*"></entry>
             </map>
         </property>
         <!--设置监听器-->

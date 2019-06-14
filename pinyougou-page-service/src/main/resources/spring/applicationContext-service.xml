@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!--组件扫描@service-->
 
-    <!--<context:component-scan base-package="com.pinyougou.service"></context:component-scan>-->
+    <!--<context:component-scan base-package="com.pinyougou.es.service"></context:component-scan>-->
 
     <!--dubbo的配置项-->
     <dubbo:application name="pinyougou-page"></dubbo:application>
@@ -22,10 +22,12 @@
 
     <dubbo:provider timeout="100000"></dubbo:provider>
 
-    <!--配置freemarker和spring的整合配置-->
+    <!--
+        配置freemarker和spring的整合配置
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer" id="freeMarkerConfigurer">
         <property name="templateLoaderPath" value="/WEB-INF/ftl"></property>
         <property name="defaultEncoding" value="utf-8"></property>
     </bean>
 
+    -->
 </beans>
