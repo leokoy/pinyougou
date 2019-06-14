@@ -1,3 +1,4 @@
+com\pinyougou\shop\controller\OrderController.class
 com\pinyougou\shop\controller\SellerController.class
 com\pinyougou\shop\controller\OrderItemController.class
 com\pinyougou\shop\security\ShopSecurityConfig.class
