@@ -1,6 +1,7 @@
 package com.pinyougou.manager.controller;
 import java.util.List;
 
+import entity.Order;
 import org.springframework.web.bind.annotation.*;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.pojo.TbOrderItem;
@@ -28,8 +29,12 @@ public class OrderItemController {
 	public List<TbOrderItem> findAll(){			
 		return orderItemService.findAll();
 	}
-	
-	
+
+	@RequestMapping("/findOrderCount")
+	public List<Order> findOrderCount() {
+		return orderItemService.findOrderCount();
+	}
+
 	
 	@RequestMapping("/findPage")
     public PageInfo<TbOrderItem> findPage(@RequestParam(value = "pageNo", defaultValue = "1", required = true) Integer pageNo,

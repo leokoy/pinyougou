@@ -4,6 +4,8 @@ import com.pinyougou.pojo.TbOrderItem;
 
 import com.github.pagehelper.PageInfo;
 import com.pinyougou.core.service.CoreService;
+import entity.Order;
+
 /**
  * 服务层接口
  * @author Administrator
@@ -28,5 +30,7 @@ public interface OrderItemService extends CoreService<TbOrderItem> {
 	 * @return
 	 */
 	PageInfo<TbOrderItem> findPage(Integer pageNo, Integer pageSize, TbOrderItem OrderItem);
-	
+
+	List<Order> findOrderCount();
+
 }
