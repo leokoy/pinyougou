@@ -136,5 +136,18 @@ public class OrderServiceImpl extends CoreServiceImpl<TbOrder>  implements Order
 
         return pageInfo;
     }
-	
+
+	@Override
+	public void updateStatus(Long[] ids, String status) {
+		// sele * from aaa wehre id in(1,2,33,4)
+		Example example = new Example(TbOrder.class);
+		Example.Criteria criteria = example.createCriteria();
+
+		criteria.andIn("orderId",Arrays.asList(ids));
+
+		TbOrder tbOrder = new TbOrder();
+		tbOrder.setStatus("4");
+		orderMapper.updateByExampleSelective(tbOrder,example);
+	}
+
 }

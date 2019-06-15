@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 D:\Acode\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\controller\UserController.java
 D:\Acode\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\security\UserDetailsServiceImpl.java
 D:\Acode\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\pojo\Person.java
 D:\Acode\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\controller\PersonController.java
+=======
+E:\Code_Root\pyg\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\security\UserDetailsServiceImpl.java
+E:\Code_Root\pyg\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\pojo\Person.java
+E:\Code_Root\pyg\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\controller\PersonController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-user-web\src\main\java\com\pinyougou\user\controller\UserController.java
+>>>>>>> remotes/origin/master

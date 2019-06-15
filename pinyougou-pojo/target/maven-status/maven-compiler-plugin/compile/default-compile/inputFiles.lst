@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Acode\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContent.java
 D:\Acode\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecificationOption.java
 D:\Acode\pinyougou\pinyougou-pojo\src\main\java\entity\Error.java
@@ -26,3 +27,34 @@ D:\Acode\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbProvinces.j
 D:\Acode\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAddress.java
 D:\Acode\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItem.java
 D:\Acode\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCat.java
+=======
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCat.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecification.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\entity\Cart.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoods.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbFreightTemplate.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbProvinces.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbUser.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSeckillGoods.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAreas.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbBrand.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\entity\Error.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\App.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbPayLog.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContent.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\entity\Specification.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrder.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderItem.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecificationOption.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItem.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAddress.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\entity\Order.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentCategory.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSeckillOrder.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\entity\Goods.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSeller.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\entity\Result.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbCities.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoodsDesc.java
+E:\Code_Root\pyg\pinyougou\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplate.java
+>>>>>>> remotes/origin/master

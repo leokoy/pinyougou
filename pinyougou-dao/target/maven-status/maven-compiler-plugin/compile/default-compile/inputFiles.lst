@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\App.java
 D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbTypeTemplateMapper.java
 D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbContentCategoryMapper.java
@@ -21,3 +22,28 @@ D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbOrderMappe
 D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbContentMapper.java
 D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbPayLogMapper.java
 D:\Acode\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbItemMapper.java
+=======
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbProvincesMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbItemMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbOrderMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbTypeTemplateMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbAreasMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbGoodsMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbContentCategoryMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSellerMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbContentMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbAddressMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbFreightTemplateMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbOrderItemMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbPayLogMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbUserMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSpecificationOptionMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbGoodsDescMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSeckillOrderMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbCitiesMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSeckillGoodsMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbBrandMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\App.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbItemCatMapper.java
+E:\Code_Root\pyg\pinyougou\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSpecificationMapper.java
+>>>>>>> remotes/origin/master

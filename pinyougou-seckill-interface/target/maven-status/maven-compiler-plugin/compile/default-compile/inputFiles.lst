@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 D:\Acode\pinyougou\pinyougou-seckill-interface\src\main\java\com\pinyougou\seckill\service\SeckillGoodsService.java
 D:\Acode\pinyougou\pinyougou-seckill-interface\src\main\java\com\pinyougou\seckill\service\SeckillOrderService.java
 D:\Acode\pinyougou\pinyougou-seckill-interface\src\main\java\com\pinyougou\App.java
+=======
+E:\Code_Root\pyg\pinyougou\pinyougou-seckill-interface\src\main\java\com\pinyougou\App.java
+E:\Code_Root\pyg\pinyougou\pinyougou-seckill-interface\src\main\java\com\pinyougou\seckill\service\SeckillOrderService.java
+E:\Code_Root\pyg\pinyougou\pinyougou-seckill-interface\src\main\java\com\pinyougou\seckill\service\SeckillGoodsService.java
+>>>>>>> remotes/origin/master

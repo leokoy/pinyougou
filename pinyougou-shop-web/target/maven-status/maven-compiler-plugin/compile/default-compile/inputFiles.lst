@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 D:\Acode\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\GoodsController.java
 D:\Acode\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\TypeTemplateController.java
 D:\Acode\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\ItemCatController.java
 D:\Acode\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\service\UserDetailsServiceImpl.java
 D:\Acode\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\SellerController.java
 D:\Acode\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\security\ShopSecurityConfig.java
+=======
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\GoodsController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\security\ShopSecurityConfig.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\service\UserDetailsServiceImpl.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\SellerController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\TypeTemplateController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\ItemCatController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\OrderController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-shop-web\src\main\java\com\pinyougou\shop\controller\OrderItemController.java
+>>>>>>> remotes/origin/master

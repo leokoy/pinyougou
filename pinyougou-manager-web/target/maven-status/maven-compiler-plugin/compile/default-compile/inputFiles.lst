@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\OrderController.java
 D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\OrderItemController.java
 D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\config\ManagerSecurityConfig.java
@@ -9,3 +10,16 @@ D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\con
 D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\GoodsController.java
 D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\ItemCatController.java
 D:\Acode\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\TypeTemplateController.java
+=======
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\config\ManagerSecurityConfig.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\GoodsController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\ItemCatController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\SeckillGoodsController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\BrandController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\OrderItemController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\OrderController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\SpecificationController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\SellerController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\TypeTemplateController.java
+E:\Code_Root\pyg\pinyougou\pinyougou-manager-web\src\main\java\com\pinyougou\manager\controller\LoginUserInfoController.java
+>>>>>>> remotes/origin/master
