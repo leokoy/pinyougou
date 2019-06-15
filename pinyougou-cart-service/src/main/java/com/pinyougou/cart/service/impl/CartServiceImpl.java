@@ -117,6 +117,7 @@ public class CartServiceImpl implements CartService {
         redisTemplate.boundHashOps("Redis_CartList").put(name,cartListNew);
     }
 
+
     @Override
     public List<Cart> merge(List<Cart> cookieList, List<Cart> cartListFromRedis) {
         for (Cart cart : cookieList) {

@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 import com.pinyougou.cart.service.CartService;
 import com.pinyougou.common.util.CookieUtil;
+import com.pinyougou.pojo.TbItem;
 import entity.Cart;
 import entity.Result;
 import org.apache.commons.lang3.StringUtils;
@@ -96,7 +97,7 @@ public class CartController {
      * @return
      */
     @RequestMapping("/addGoodsToCartList")
-    @CrossOrigin(origins = {"http://localhost:9105"}, allowCredentials = "true")
+    @CrossOrigin(origins = {"http://localhost:9105","http://localhost:9106"}, allowCredentials = "true")
     public Result addGoodsToCartList(Long itemId, Integer num, HttpServletRequest request, HttpServletResponse response) {
         //表示 服务器 资源允许 指定的域 来访问。
         /*response.setHeader("Access-Control-Allow-Origin", "http://localhost:9105");
@@ -169,10 +170,9 @@ public class CartController {
                 LinkedHashSet<Long> idList = cartService.getIdListFromRedis(name);
                 if (idList != null) {
                     for (Long id : idList) {
-                        System.out.println("=================="+id);
-                        System.out.println("==============="+itemId);
+                        System.out.println("redis里的id=================="+id);
+                        System.out.println("要存的id====================="+itemId);
                         if (id.equals(itemId)) {
-                            System.out.println("=========欧吼=========");
                             return new Result(false, "该商品已在关注列表");
                         }
                     }

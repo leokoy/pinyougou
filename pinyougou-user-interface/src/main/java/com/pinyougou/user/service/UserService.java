@@ -1,5 +1,7 @@
 package com.pinyougou.user.service;
 import java.util.List;
+
+import com.pinyougou.pojo.TbItem;
 import com.pinyougou.pojo.TbUser;
 
 import com.github.pagehelper.PageInfo;
@@ -46,4 +48,7 @@ public interface UserService extends CoreService<TbUser> {
 	 * @return
 	 */
     boolean checkCode(String smsCode, String phone);
+
+    //根据id查TbItem数据
+    TbItem searchTbItem(Long id);
 }
