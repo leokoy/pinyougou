@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-com\pinyougou\shop\controller\SellerController.class
-=======
 com\pinyougou\shop\controller\OrderController.class
 com\pinyougou\shop\controller\SellerController.class
 com\pinyougou\shop\controller\OrderItemController.class
->>>>>>> remotes/origin/master
 com\pinyougou\shop\security\ShopSecurityConfig.class
 com\pinyougou\shop\controller\ItemCatController.class
 com\pinyougou\shop\controller\TypeTemplateController.class
