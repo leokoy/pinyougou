@@ -22,6 +22,7 @@ com\pinyougou\pojo\TbContent.class
 com\pinyougou\pojo\TbAddress.class
 com\pinyougou\pojo\TbItem.class
 com\pinyougou\pojo\TbGoods.class
+entity\Pie.class
 com\pinyougou\pojo\TbGoodsDesc.class
 com\pinyougou\pojo\TbSpecification.class
 com\pinyougou\pojo\TbOrderItem.class
